@@ -4,80 +4,148 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Tube Flip</title>
+  <meta name="description" content="Tube Flip does not collect, store, or transmit any personal data.">
+  <link rel="icon" href="icons/icon48.png">
   <style>
-    :root { color-scheme: light dark; }
+    :root {
+      --bg: #0b0b0b;
+      --surface: #161616;
+      --surface-2: #1e1e1e;
+      --border: #2a2a2a;
+      --text: #f4f4f4;
+      --muted: #9a9a9a;
+      --red: #ff2a2a;
+      --radius: 16px;
+      --max: 760px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
+      margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
-      color: #1a1a1a;
-      background: #fff;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
-    @media (prefers-color-scheme: dark) {
-      body { color: #e6e6e6; background: #121212; }
-      a { color: #7cb0ff; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,11,11,0.72);
+      border-bottom: 1px solid var(--border);
     }
-    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.15rem; margin-top: 2rem; }
-    .updated { color: #888; font-size: 0.9rem; margin-top: 0; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; text-decoration: none; color: var(--text); }
+    .brand img { width: 30px; height: 30px; border-radius: 7px; }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+    .nav-links a:hover, .nav-links a[aria-current] { color: var(--text); }
+
+    main { padding: 56px 0 24px; }
+    .eyebrow { color: var(--red); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 10px; }
+    h1 { font-size: clamp(2rem, 5vw, 2.6rem); margin: 0 0 8px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+
+    .lead {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      border-radius: var(--radius); padding: 20px 22px; margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    h2 { font-size: 1.2rem; margin: 36px 0 8px; letter-spacing: -0.01em; }
+    p { color: #d7d7d7; margin: 0 0 12px; }
+    a { color: var(--red); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 0; margin-top: 40px; color: var(--muted); font-size: 0.9rem; }
+    .foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .foot a { color: var(--muted); text-decoration: none; }
+    .foot a:hover { color: var(--text); }
+    .foot .links { display: flex; gap: 20px; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Tube Flip (Chrome extension) · Last updated: 21 August 2026</p>
+  <header>
+    <div class="nav">
+      <a class="brand" href="/">
+        <img src="icons/icon128.png" alt="Tube Flip logo">
+        Tube Flip
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy-policy" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    This Privacy Policy describes how the <strong>Tube Flip</strong> browser
-    extension ("the extension") handles information. In short: <strong>the extension does not
-    collect, store, transmit, or share any personal data.</strong>
-  </p>
+  <main class="wrap">
+    <p class="eyebrow">Tube Flip</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Chrome extension · Last updated: 21 August 2026</p>
 
-  <h2>Data we collect</h2>
-  <p>
-    None. The extension has no accounts, no analytics, no tracking, no cookies, and no
-    background servers. It does not read, record, or send your browsing history, video
-    history, search queries, or any other information anywhere.
-  </p>
+    <p class="lead">
+      In short: <strong>Tube Flip does not collect, store, transmit, or share any personal
+      data.</strong>
+    </p>
 
-  <h2>How the extension works</h2>
-  <p>
-    The extension runs only on YouTube watch pages (<code>https://www.youtube.com/watch</code>).
-    It adds rotate and flip buttons to the video player and changes how the current video is
-    displayed by applying a CSS <code>transform</code> to the video element inside your own
-    browser. All processing happens locally on your device. Nothing leaves your computer.
-  </p>
+    <h2>Data we collect</h2>
+    <p>
+      None. The extension has no accounts, no analytics, no tracking, no cookies, and no
+      background servers. It does not read, record, or send your browsing history, video
+      history, search queries, or any other information anywhere.
+    </p>
 
-  <h2>Permissions</h2>
-  <p>
-    The extension requests no special Chrome permissions. Its content script accesses YouTube
-    watch pages solely to insert the player buttons and apply the visual transform described
-    above. This access is not used to collect or transmit any data.
-  </p>
+    <h2>How the extension works</h2>
+    <p>
+      The extension runs only on YouTube watch pages (<code>https://www.youtube.com/watch</code>).
+      It adds rotate and flip buttons to the video player and changes how the current video is
+      displayed by applying a CSS <code>transform</code> to the video element inside your own
+      browser. All processing happens locally on your device. Nothing leaves your computer.
+    </p>
 
-  <h2>Third parties</h2>
-  <p>
-    The extension does not send data to any third party and does not integrate any third-party
-    analytics, advertising, or tracking services.
-  </p>
+    <h2>Permissions</h2>
+    <p>
+      The extension requests no special Chrome permissions. Its content script accesses YouTube
+      watch pages solely to insert the player buttons and apply the visual transform described
+      above. This access is not used to collect or transmit any data.
+    </p>
 
-  <h2>Children's privacy</h2>
-  <p>
-    Because the extension collects no data at all, it collects no data from children.
-  </p>
+    <h2>Third parties</h2>
+    <p>
+      The extension does not send data to any third party and does not integrate any third-party
+      analytics, advertising, or tracking services.
+    </p>
 
-  <h2>Changes to this policy</h2>
-  <p>
-    If this policy changes, the updated version will be posted at this same URL with a new
-    "Last updated" date.
-  </p>
+    <h2>Children's privacy</h2>
+    <p>
+      Because the extension collects no data at all, it collects no data from children.
+    </p>
 
-  <h2>Contact</h2>
-  <p>
-    Questions about this policy can be sent to:
-    <a href="mailto:thuannc97@gmail.com">thuannc97@gmail.com</a>.
-  </p>
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, the updated version will be posted at this same URL with a new
+      "Last updated" date.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be sent to:
+      <a href="mailto:thuannc97@gmail.com">thuannc97@gmail.com</a>.
+    </p>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div>© 2026 Tube Flip</div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="mailto:thuannc97@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
