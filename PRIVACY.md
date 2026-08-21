@@ -1,8 +1,8 @@
-# Privacy Policy — YouTube Video Rotation
+# Privacy Policy — Tube Flip
 
 _Last updated: 21 August 2026_
 
-**The YouTube Video Rotation extension does not collect, store, transmit, or share any personal data.**
+**The Tube Flip extension does not collect, store, transmit, or share any personal data.**
 
 ## Data we collect
 None. The extension has no accounts, no analytics, no tracking, no cookies, and no background

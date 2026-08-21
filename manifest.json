@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Video Rotation",
+  "name": "Tube Flip",
   "version": "1.0.0",
-  "description": "Rotate YouTube videos in 90° steps from the player controls.",
+  "description": "Rotate and flip YouTube videos right from the player controls.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

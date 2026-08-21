@@ -5,7 +5,7 @@ Bản thảo để copy-paste vào Developer Dashboard. Điền y nguyên; phầ
 ---
 
 ## 0. File tải lên (Package)
-- **ZIP:** `youtube-video-rotation-v1.0.0.zip` (đã tạo ở gốc repo, 6 file, `manifest.json` ở gốc archive).
+- **ZIP:** `tube-flip-v1.0.0.zip` (đã tạo ở gốc repo, 6 file, `manifest.json` ở gốc archive).
 - Manifest đã đủ trường bắt buộc: `name`, `version` (1.0.0), `manifest_version` (3), `description`, `icons` (16/48/128).
 
 ---
@@ -16,7 +16,7 @@ Bản thảo để copy-paste vào Developer Dashboard. Điền y nguyên; phầ
 
 **Extension name:**
 ```
-YouTube Video Rotation
+Tube Flip
 ```
 
 **Short description** (tối đa 132 ký tự):
@@ -26,7 +26,7 @@ Add rotate and flip buttons to the YouTube player. Turn any video 90° or mirror
 
 **Detailed description:**
 ```
-YouTube Video Rotation adds three small buttons to the YouTube player controls, next to the Settings gear:
+Tube Flip adds three small buttons to the YouTube player controls, next to the Settings gear:
 
 • Rotate — each click turns the video 90° clockwise (0° → 90° → 180° → 270°). At 90° and 270° the video is scaled to stay inside the player.
 • Flip horizontal — mirror the video left-to-right.
@@ -92,7 +92,7 @@ The content script runs only on YouTube watch pages (youtube.com/watch) to injec
 
 ## Checklist trước khi Submit
 - [ ] Đã test tay extension trên youtube.com/watch (rotate, flip, sau quảng cáo, fullscreen, đổi video).
-- [ ] Upload `youtube-video-rotation-v1.0.0.zip`.
+- [ ] Upload `tube-flip-v1.0.0.zip`.
 - [ ] Điền name + short + detailed description.
 - [ ] Chọn category = Tools, language = English (US).
 - [ ] Upload ≥1 screenshot (1280×800 hoặc 640×400).
