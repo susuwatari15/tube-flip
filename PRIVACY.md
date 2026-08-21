@@ -29,4 +29,4 @@ If this policy changes, the updated version will be posted at the same URL with 
 "Last updated" date.
 
 ## Contact
-Questions about this policy can be sent to: `thuanrom97@gmail.com`.
+Questions about this policy can be sent to: `thuannc97@gmail.com`.
